@@ -1,0 +1,19 @@
+api:
+  name: "test-health-check-app"
+  version: "1.0.0"
+  runtime: "4.4.0"
+
+db:
+  host: "cloud-services.demos.mulesoft.com"
+  port: "30522"
+  username: "admin"
+  password: ""
+  database: "ps-demo-db"
+  
+salesforce:
+  username: ""
+  password: ""
+  token: ""
+  
+serviceNow:
+  host: "dev25750.service-now.com"

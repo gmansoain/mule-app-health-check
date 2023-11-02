@@ -21,7 +21,7 @@ http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mu
 	<http:listener-config name="HTTP_Listener_System_API" doc:name="HTTP Listener config" doc:id="9c79addc-e292-4951-86ae-7206cc44dccb" >
 		<http:listener-connection host="0.0.0.0" port="8085" />
 	</http:listener-config>
-	<configuration-properties doc:name="Configuration properties" doc:id="e457b8de-b5db-42d7-a047-f0e45e5dc324" file="properties.yaml" />
+	<configuration-properties doc:name="Configuration properties" doc:id="e457b8de-b5db-42d7-a047-f0e45e5dc324" file="properties/properties-dev.yaml" />
 	<flow name="livenessCheckSystemAPI" doc:id="a1898151-e4d8-45ce-b93c-65f28cfac660" >
 			<http:listener doc:name="Listener" doc:id="d5a5b0b6-8ed9-419b-abc7-17106d8982ef" config-ref="HTTP_Listener_System_API" path="/alive">
 				<http:response statusCode="200" />
